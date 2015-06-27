@@ -47,10 +47,14 @@
                 hit.addClass('currentHit');
               }, 30)
               
+              var div = $('#searchResults');
+              console.log('hit offset ' + hit.offset().top);
+              console.log('scroll top ' + div.scrollTop());
+              console.log('div top ' + div.offset().top);
               // then scroll to it
-              $('#searchResults').animate({
-                    scrollTop: hit.offset().top - $('#searchResults').offset().top
-                }, 0);
+              var top = hit.offset().top + div.scrollTop() - div.offset().top - 10;
+              console.log(top);
+              div.scrollTop(top);
             }
           } else {
             $scope.searchResults = sourceText;    
