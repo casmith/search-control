@@ -36,7 +36,6 @@
 							$scope.count = $('#searchResults').find('.highlight').size();	
 						});
 						
-					
 						var highlighted = $('#searchResults').find('.highlight');
 						// remove highlighting for current hit
 						highlighted.removeClass('currentHit');
@@ -52,13 +51,7 @@
 							$('#searchResults').animate({
 						        scrollTop: hit.offset().top - $('#searchResults').offset().top
 						    }, 0);
-
-						    
 						}
-
-						// } else {
-						// 	$scope.currentHit = 0;
-						// }
 					} else {
 						$scope.searchResults = sourceText;		
 						$scope.count = 0;
