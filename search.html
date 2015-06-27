@@ -1,0 +1,4 @@
+<div>
+<input ng-keyup="updateSearchResults($event)" ng-model="searchString" /><span ng-show="count"> {{currentHit+1}} of {{count}} hits</span>
+<div ng-bind-html="searchResults" id="searchResults"></div>
+</div>

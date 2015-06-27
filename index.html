@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search Control</title>
+  <script src="angular.min.js"></script>
+  <script src="angular-sanitize.min.js"></script>
+  <script src="jquery.min.js"></script>
+  <script src="app.js"></script>
+  <style>
+  .highlight {
+  	background-color: yellow;
+  }
+  .currentHit {
+  	background-color: Aqua;
+  }
+  #searchResults {
+  	border: 1px solid black;
+  	width: 400px;
+  	height: 400px;
+  	overflow: auto;
+  }
+  </style>
+</head>
+<body ng-app="app">
+  <div>
+    <search-control></search-control>
+  </div>	
+ </body>
+</html>
